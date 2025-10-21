@@ -62,7 +62,6 @@ p{max-width:650px;margin:auto;line-height:1.8;}
 .btn:hover{background:var(--gold);color:var(--violet);}
 .btn-outline{border:2px solid var(--violet);color:var(--violet);}
 .btn-outline:hover{background:var(--violet);color:white;}
-
 /* About */
 .section{padding:5rem 1rem;text-align:center;}
 .about{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;max-width:1000px;margin:auto;}
@@ -168,4 +167,38 @@ body {
 .navbar-nav .nav-link.active {
   color: var(--gold);
 }
+/* === Boutons CV bleus identiques à Bootstrap === */
+.btn-violet,
+.btn-outline-violet {
+  border-radius: 30px !important;
+  padding: 0.8rem 2rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  font-family: var(--font);
+}
+
+/* Bleu principal comme le bouton "View Projects" */
+.btn-violet {
+  background-color: #0d6efd !important; /* même bleu que Bootstrap */
+  color: #fff !important;
+  border: none !important;
+}
+.btn-violet:hover {
+  background-color: #0b5ed7 !important; /* bleu plus foncé au hover */
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* Version contour (Download CV) */
+.btn-outline-violet {
+  border: 2px solid #0d6efd !important;
+  color: #0d6efd !important;
+  background: transparent !important;
+}
+.btn-outline-violet:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
 
