@@ -6,9 +6,35 @@
   <title>Eya Ben Belgacem – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- 🌸 Police Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+<!-- ✅ Bootstrap JS (nécessaire pour la navbar mobile) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <body>
+    <!-- 🌸 Navbar Bootstrap -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">🌷 Eya Ben Belgacem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <!-- ✨ Header -->
   <header class="header">
     <nav class="navbar container">
@@ -34,8 +60,8 @@
         Passionate about crafting digital experiences that combine elegant design and efficient code.
       </p>
       <div class="buttons fade-in-delay3">
-        <a href="#projects" class="btn">View Projects ✨</a>
-        <a href="cv/eya-ben-belgacem.pdf" class="btn-outline" target="_blank">📄 Download CV</a>
+        <a href="#projects" class="btn btn-primary me-2">✨ View Projects</a>
+<a href="cv/eya-ben-belgacem.pdf" target="_blank" class="btn btn-outline-primary">📄 Download CV</a>
       </div>
     </div>
   </section>
@@ -86,7 +112,8 @@
   </section>
 
   <!-- 📬 Contact -->
-  <section id="contact" class="section alt-bg fade-in">
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
     <h2 class="section-title">📩 Get in Touch</h2>
     <p>
       <a href="mailto:benbelgacemeyaa@gmail.com" class="email-link">
@@ -94,7 +121,7 @@
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="Email icon" />
       </a>
     </p>
-    <p>📍 Tozeur, Tunisia</p>
+    <p class="lead">📍 Tozeur, Tunisia</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/eya-ben-belgacem-663031384/" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
@@ -105,8 +132,8 @@
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Eya Ben Belgacem | Built with 💜 and creativity</p>
+  <footer class="text-center py-3 fw-semibold">
+    © 2025 Eya Ben Belgacem | Built with 💜 and creativity
   </footer>
 </body>
-</html>
+</html>  : corriger les fautes de bootstrap !
